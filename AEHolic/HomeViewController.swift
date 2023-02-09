@@ -12,5 +12,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         print("HomeViewControllerの画面です")
+        print("リモートリポジトリとの連携のテストです")
     }
 }
