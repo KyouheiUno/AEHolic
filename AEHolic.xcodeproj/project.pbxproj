@@ -16,6 +16,7 @@
 		81AE03952995AD050029C4D6 /* AEHolicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03942995AD050029C4D6 /* AEHolicUITests.swift */; };
 		81AE03972995AD050029C4D6 /* AEHolicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03962995AD050029C4D6 /* AEHolicUITestsLaunchTests.swift */; };
 		81AE03A42995AD620029C4D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03A32995AD620029C4D6 /* HomeViewController.swift */; };
+		81AE03A82995B9BA0029C4D6 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		81AE03942995AD050029C4D6 /* AEHolicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEHolicUITests.swift; sourceTree = "<group>"; };
 		81AE03962995AD050029C4D6 /* AEHolicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AEHolicUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		81AE03A32995AD620029C4D6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				81AE03732995AD030029C4D6 /* AppDelegate.swift */,
 				81AE03752995AD030029C4D6 /* SceneDelegate.swift */,
 				81AE03792995AD030029C4D6 /* Main.storyboard */,
+				81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */,
 				81AE03A32995AD620029C4D6 /* HomeViewController.swift */,
 				81AE037C2995AD040029C4D6 /* Assets.xcassets */,
 				81AE037E2995AD040029C4D6 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 				81AE03742995AD030029C4D6 /* AppDelegate.swift in Sources */,
 				81AE03762995AD030029C4D6 /* SceneDelegate.swift in Sources */,
 				81AE03A42995AD620029C4D6 /* HomeViewController.swift in Sources */,
+				81AE03A82995B9BA0029C4D6 /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
