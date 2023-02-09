@@ -58,7 +58,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IndexViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlO-75-7Gy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eバンド一覧画面(IndexViewController)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlO-75-7Gy">
                                 <rect key="frame" x="105" y="396" width="204" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -76,6 +76,48 @@
             <point key="canvasLocation" x="336.64122137404581" y="41.549295774647888"/>
         </scene>
         <!--Item-->
+        <scene sceneID="Nfm-Gc-ASP">
+            <objects>
+                <navigationController id="ar2-6g-rLo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="5WL-PE-GfQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZhR-VY-hzr">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YbE-WD-RsT" kind="relationship" relationship="rootViewController" id="l73-Lo-nGa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AM-CI-gFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445" y="708"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="fze-nK-Ufa">
+            <objects>
+                <viewController id="YbE-WD-RsT" customClass="HistoryViewController" customModule="AEHolic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vbb-td-sem">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="累積記録画面(HistoryViewController)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSo-yD-ElV">
+                                <rect key="frame" x="73" y="416" width="283" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="skj-u7-0WP"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ymL-Dd-IhU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RG-h1-F0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="708"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="kTe-eH-jgV">
             <objects>
                 <navigationController id="kCD-Tr-f7u" sceneMemberID="viewController">
@@ -90,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNJ-kX-Eo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433" y="42"/>
+            <point key="canvasLocation" x="-445" y="32"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="YQ1-tf-Mft">
@@ -104,11 +146,12 @@
                     <connections>
                         <segue destination="vwB-Bh-7HM" kind="relationship" relationship="viewControllers" id="sd8-fO-w7d"/>
                         <segue destination="kCD-Tr-f7u" kind="relationship" relationship="viewControllers" id="I42-Ep-Qwa"/>
+                        <segue destination="ar2-6g-rLo" kind="relationship" relationship="viewControllers" id="pCz-jH-wST"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETj-nX-O6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1288" y="-364"/>
+            <point key="canvasLocation" x="-1761" y="311"/>
         </scene>
     </scenes>
     <resources>
@@ -117,6 +160,9 @@
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
