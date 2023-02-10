@@ -28,7 +28,7 @@ class HomeViewController: UIViewController  {
     
     //日付
     func dateFormat(_ hoge: String) -> DateFormatter {
-        var dateFormat = DateFormatter()
+        let dateFormat = DateFormatter()
         dateFormat.dateFormat = hoge
         dateFormat.timeZone = .current
         dateFormat.locale = Locale(identifier: "ja-JP")
