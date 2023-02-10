@@ -8,17 +8,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--ホーム-->
         <scene sceneID="lef-VS-dZt">
             <objects>
                 <navigationController id="vwB-Bh-7HM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="homeicon" id="EK9-0V-LUP"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="homeicon" id="EK9-0V-LUP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QYb-Od-tXq">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="932-JS-VSl"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rAd-DP-UGx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxk-Yl-Xc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,13 +73,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJb-nC-uFE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336.64122137404581" y="41.549295774647888"/>
+            <point key="canvasLocation" x="337" y="32"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--累積記録-->
         <scene sceneID="Nfm-Gc-ASP">
             <objects>
                 <navigationController id="ar2-6g-rLo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="historyicon" id="5WL-PE-GfQ"/>
+                    <tabBarItem key="tabBarItem" title="累積記録" image="historyicon" id="5WL-PE-GfQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZhR-VY-hzr">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -115,13 +115,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6RG-h1-F0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="338" y="708"/>
+            <point key="canvasLocation" x="337" y="708"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Eバンド一覧-->
         <scene sceneID="kTe-eH-jgV">
             <objects>
                 <navigationController id="kCD-Tr-f7u" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="indexicon" id="lq9-u8-DgR"/>
+                    <tabBarItem key="tabBarItem" title="Eバンド一覧" image="indexicon" id="lq9-u8-DgR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vvy-sP-57q">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -138,10 +138,11 @@
         <scene sceneID="YQ1-tf-Mft">
             <objects>
                 <tabBarController id="KAz-sO-NTD" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IcS-ja-4Tn">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="IcS-ja-4Tn">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="vwB-Bh-7HM" kind="relationship" relationship="viewControllers" id="sd8-fO-w7d"/>
@@ -158,6 +159,9 @@
         <image name="historyicon" width="25" height="25"/>
         <image name="homeicon" width="25" height="25"/>
         <image name="indexicon" width="25" height="25"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
