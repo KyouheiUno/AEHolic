@@ -163,7 +163,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ymL-Dd-IhU"/>
                     <connections>
-                        <outlet property="historyRecordTableView" destination="dwh-jm-yOv" id="8JX-Yp-jbF"/>
+                        <outlet property="historyRecordTableView" destination="dwh-jm-yOv" id="dPK-5F-bJz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6RG-h1-F0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

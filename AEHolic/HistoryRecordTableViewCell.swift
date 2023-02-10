@@ -12,8 +12,8 @@ class HistoryRecordTableViewCell: UITableViewCell {
     @IBOutlet weak var historyRecordContentLabel: UILabel!
     @IBOutlet weak var historyRecordStartDateLabel: UILabel!
     @IBOutlet weak var historyRecordFinishDateLabel: UILabel!
-    @IBOutlet weak var historyRecordTotalValueLabel: UILabel!
     @IBOutlet weak var historyRecordSuccessCountLabel: UILabel!
+    @IBOutlet weak var historyRecordTotalValueLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
