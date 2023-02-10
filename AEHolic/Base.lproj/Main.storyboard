@@ -12,7 +12,7 @@
         <scene sceneID="lef-VS-dZt">
             <objects>
                 <navigationController id="vwB-Bh-7HM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ホーム" image="homeicon" id="EK9-0V-LUP"/>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="homeIcon" id="EK9-0V-LUP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QYb-Od-tXq">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,32 +23,85 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxk-Yl-Xc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-382" y="-665"/>
+            <point key="canvasLocation" x="-445" y="-665"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="AEHolic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="HomeVIew Controller" customClass="HomeVIewController">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AEHolic親画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exZ-5d-evs">
-                                <rect key="frame" x="128" y="388" width="293" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mm/dd" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Be3-b2-CA3">
+                                <rect key="frame" x="30" y="123" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="8g6-qb-lff"/>
+                                    <constraint firstAttribute="width" constant="90" id="Sxf-DR-7NJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月曜日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVh-Hn-btD">
+                                <rect key="frame" x="215" y="123" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="2iR-BR-tsK"/>
+                                    <constraint firstAttribute="height" constant="90" id="MHA-oO-gcl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userDefaultIcon" translatesAutoresizingMaskIntoConstraints="NO" id="w0m-uI-Nia">
+                                <rect key="frame" x="150" y="123" width="25" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="HRC-Qt-2ys"/>
+                                    <constraint firstAttribute="width" constant="90" id="Qdi-SS-JRQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本日の行動" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHo-Sl-eOW">
+                                <rect key="frame" x="30" y="253" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q5i-aH-L7l">
+                                <rect key="frame" x="0.0" y="274" width="393" height="495"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JVh-Hn-btD" secondAttribute="trailing" constant="30" id="3B6-81-gNh"/>
+                            <constraint firstItem="Be3-b2-CA3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="F17-aK-mF6"/>
+                            <constraint firstItem="JVh-Hn-btD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="JNV-5T-lpq"/>
+                            <constraint firstItem="Q5i-aH-L7l" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Og4-cO-Nov"/>
+                            <constraint firstItem="Q5i-aH-L7l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PlJ-n0-nve"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eHo-Sl-eOW" secondAttribute="trailing" constant="30" id="PtR-Rq-p27"/>
+                            <constraint firstItem="eHo-Sl-eOW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="SgK-lY-WNT"/>
+                            <constraint firstItem="w0m-uI-Nia" firstAttribute="leading" secondItem="Be3-b2-CA3" secondAttribute="trailing" constant="30" id="Ubb-dD-KnP"/>
+                            <constraint firstItem="Q5i-aH-L7l" firstAttribute="top" secondItem="eHo-Sl-eOW" secondAttribute="bottom" id="Y97-uq-f7G"/>
+                            <constraint firstItem="eHo-Sl-eOW" firstAttribute="top" secondItem="Be3-b2-CA3" secondAttribute="bottom" constant="40" id="aTV-4o-FiU"/>
+                            <constraint firstItem="JVh-Hn-btD" firstAttribute="leading" secondItem="w0m-uI-Nia" secondAttribute="trailing" constant="40" id="iaw-gT-Edw"/>
+                            <constraint firstItem="w0m-uI-Nia" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jmy-IA-Z7m"/>
+                            <constraint firstItem="Be3-b2-CA3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lal-IA-TZ1"/>
+                            <constraint firstAttribute="trailing" secondItem="Q5i-aH-L7l" secondAttribute="trailing" id="ntw-Ot-l8y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jdf-gG-rbf"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="Be3-b2-CA3" id="k5X-53-5Xb"/>
+                        <outlet property="dayOfWeekAndTimeLabel" destination="JVh-Hn-btD" id="A5g-R4-jMo"/>
+                        <outlet property="todayActionLabel" destination="eHo-Sl-eOW" id="qV8-rC-aNx"/>
+                        <outlet property="userImage" destination="w0m-uI-Nia" id="xUj-gx-FhR"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="337" y="-665"/>
+            <point key="canvasLocation" x="270.99236641221376" y="-665.49295774647885"/>
         </scene>
         <!--Index View Controller-->
         <scene sceneID="uk5-i8-LOo">
@@ -79,7 +132,7 @@
         <scene sceneID="Nfm-Gc-ASP">
             <objects>
                 <navigationController id="ar2-6g-rLo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="累積記録" image="historyicon" id="5WL-PE-GfQ"/>
+                    <tabBarItem key="tabBarItem" title="累積記録" image="historyIcon" id="5WL-PE-GfQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZhR-VY-hzr">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -121,7 +174,7 @@
         <scene sceneID="kTe-eH-jgV">
             <objects>
                 <navigationController id="kCD-Tr-f7u" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Eバンド一覧" image="indexicon" id="lq9-u8-DgR"/>
+                    <tabBarItem key="tabBarItem" title="Eバンド一覧" image="indexIcon" id="lq9-u8-DgR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vvy-sP-57q">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -152,18 +205,19 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETj-nX-O6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1761" y="311"/>
+            <point key="canvasLocation" x="-2048" y="228"/>
         </scene>
     </scenes>
     <resources>
-        <image name="historyicon" width="25" height="25"/>
-        <image name="homeicon" width="25" height="25"/>
-        <image name="indexicon" width="25" height="25"/>
+        <image name="historyIcon" width="25" height="25"/>
+        <image name="homeIcon" width="25" height="25"/>
+        <image name="indexIcon" width="25" height="25"/>
+        <image name="userDefaultIcon" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
