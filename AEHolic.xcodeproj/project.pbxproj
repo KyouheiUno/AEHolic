@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		812AFE332996E5EE0069DD10 /* IndexTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812AFE312996E5EE0069DD10 /* IndexTableViewCell.swift */; };
 		812AFE342996E5EE0069DD10 /* IndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812AFE322996E5EE0069DD10 /* IndexTableViewCell.xib */; };
+		812AFE372996EE280069DD10 /* HistoryRecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812AFE352996EE280069DD10 /* HistoryRecordTableViewCell.swift */; };
+		812AFE382996EE280069DD10 /* HistoryRecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 812AFE362996EE280069DD10 /* HistoryRecordTableViewCell.xib */; };
 		81AE03742995AD030029C4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03732995AD030029C4D6 /* AppDelegate.swift */; };
 		81AE03762995AD030029C4D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03752995AD030029C4D6 /* SceneDelegate.swift */; };
 		81AE037B2995AD030029C4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AE03792995AD030029C4D6 /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		812AFE312996E5EE0069DD10 /* IndexTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTableViewCell.swift; sourceTree = "<group>"; };
 		812AFE322996E5EE0069DD10 /* IndexTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexTableViewCell.xib; sourceTree = "<group>"; };
+		812AFE352996EE280069DD10 /* HistoryRecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRecordTableViewCell.swift; sourceTree = "<group>"; };
+		812AFE362996EE280069DD10 /* HistoryRecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryRecordTableViewCell.xib; sourceTree = "<group>"; };
 		81AE03702995AD030029C4D6 /* AEHolic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AEHolic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AE03732995AD030029C4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81AE03752995AD030029C4D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				81AE03732995AD030029C4D6 /* AppDelegate.swift */,
 				81AE03752995AD030029C4D6 /* SceneDelegate.swift */,
 				81AE03792995AD030029C4D6 /* Main.storyboard */,
+				812AFE352996EE280069DD10 /* HistoryRecordTableViewCell.swift */,
+				812AFE362996EE280069DD10 /* HistoryRecordTableViewCell.xib */,
 				81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */,
 				812AFE312996E5EE0069DD10 /* IndexTableViewCell.swift */,
 				812AFE322996E5EE0069DD10 /* IndexTableViewCell.xib */,
@@ -244,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AE03802995AD040029C4D6 /* LaunchScreen.storyboard in Resources */,
+				812AFE382996EE280069DD10 /* HistoryRecordTableViewCell.xib in Resources */,
 				81AE037D2995AD040029C4D6 /* Assets.xcassets in Resources */,
 				812AFE342996E5EE0069DD10 /* IndexTableViewCell.xib in Resources */,
 				81AE037B2995AD030029C4D6 /* Main.storyboard in Resources */,
@@ -276,6 +283,7 @@
 				812AFE332996E5EE0069DD10 /* IndexTableViewCell.swift in Sources */,
 				81AE03A42995AD620029C4D6 /* HomeViewController.swift in Sources */,
 				81AE03AC2995BDF10029C4D6 /* HistoryViewController.swift in Sources */,
+				812AFE372996EE280069DD10 /* HistoryRecordTableViewCell.swift in Sources */,
 				81AE03A82995B9BA0029C4D6 /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
