@@ -18,10 +18,10 @@ class HistoryRecordTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         historyRecordContentLabel.text = "ランニング"
-        historyRecordStartDateLabel.text = "yyyy/mm/dd"
-        historyRecordFinishDateLabel.text = "継続中"
-        historyRecordTotalValueLabel.text = "累積記録"
-        historyRecordSuccessCountLabel.text = "達成回数"
+        historyRecordStartDateLabel.text = "開始日" + "　" + "yyyy/mm/dd"
+        historyRecordFinishDateLabel.text = "終了日" + "　" + "yyyy/mm/dd"
+        historyRecordTotalValueLabel.text = "累積記録" + "　" + "〇〇回"
+        historyRecordSuccessCountLabel.text = "達成回数" + "　" + "〇〇/〇〇"
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
