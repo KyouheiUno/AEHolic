@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="lef-VS-dZt">
             <objects>
                 <navigationController id="vwB-Bh-7HM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="EK9-0V-LUP"/>
+                    <tabBarItem key="tabBarItem" title="" image="homeicon" id="EK9-0V-LUP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QYb-Od-tXq">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -75,11 +75,11 @@
             </objects>
             <point key="canvasLocation" x="336.64122137404581" y="41.549295774647888"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Nfm-Gc-ASP">
             <objects>
                 <navigationController id="ar2-6g-rLo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5WL-PE-GfQ"/>
+                    <tabBarItem key="tabBarItem" title="" image="historyicon" id="5WL-PE-GfQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZhR-VY-hzr">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -117,11 +117,11 @@
             </objects>
             <point key="canvasLocation" x="338" y="708"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="kTe-eH-jgV">
             <objects>
                 <navigationController id="kCD-Tr-f7u" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lq9-u8-DgR"/>
+                    <tabBarItem key="tabBarItem" title="" image="indexicon" id="lq9-u8-DgR"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vvy-sP-57q">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -155,6 +155,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="historyicon" width="25" height="25"/>
+        <image name="homeicon" width="25" height="25"/>
+        <image name="indexicon" width="25" height="25"/>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
