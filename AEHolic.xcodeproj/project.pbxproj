@@ -115,20 +115,12 @@
 		81AE03722995AD030029C4D6 /* AEHolic */ = {
 			isa = PBXGroup;
 			children = (
+				81F3B126299733CA00218E9C /* cell */,
+				81F3B1252997339100218E9C /* controller */,
+				81F3B1242997336900218E9C /* view */,
 				81AE03732995AD030029C4D6 /* AppDelegate.swift */,
 				81AE03752995AD030029C4D6 /* SceneDelegate.swift */,
-				81AE03792995AD030029C4D6 /* Main.storyboard */,
-				812AFE352996EE280069DD10 /* HistoryRecordTableViewCell.swift */,
-				812AFE362996EE280069DD10 /* HistoryRecordTableViewCell.xib */,
-				81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */,
-				812AFE312996E5EE0069DD10 /* IndexTableViewCell.swift */,
-				812AFE322996E5EE0069DD10 /* IndexTableViewCell.xib */,
-				81AE03AB2995BDF10029C4D6 /* HistoryViewController.swift */,
-				81AE03A32995AD620029C4D6 /* HomeViewController.swift */,
-				81F3B12029970AEC00218E9C /* HomeTableViewCell.swift */,
-				81F3B12129970AEC00218E9C /* HomeTableViewCell.xib */,
 				81AE037C2995AD040029C4D6 /* Assets.xcassets */,
-				81AE037E2995AD040029C4D6 /* LaunchScreen.storyboard */,
 				81AE03812995AD040029C4D6 /* Info.plist */,
 			);
 			path = AEHolic;
@@ -149,6 +141,38 @@
 				81AE03962995AD050029C4D6 /* AEHolicUITestsLaunchTests.swift */,
 			);
 			path = AEHolicUITests;
+			sourceTree = "<group>";
+		};
+		81F3B1242997336900218E9C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				81F3B12129970AEC00218E9C /* HomeTableViewCell.xib */,
+				81AE037E2995AD040029C4D6 /* LaunchScreen.storyboard */,
+				812AFE322996E5EE0069DD10 /* IndexTableViewCell.xib */,
+				812AFE362996EE280069DD10 /* HistoryRecordTableViewCell.xib */,
+				81AE03792995AD030029C4D6 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		81F3B1252997339100218E9C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				81AE03A32995AD620029C4D6 /* HomeViewController.swift */,
+				81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */,
+				81AE03AB2995BDF10029C4D6 /* HistoryViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		81F3B126299733CA00218E9C /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				812AFE352996EE280069DD10 /* HistoryRecordTableViewCell.swift */,
+				812AFE312996E5EE0069DD10 /* IndexTableViewCell.swift */,
+				81F3B12029970AEC00218E9C /* HomeTableViewCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

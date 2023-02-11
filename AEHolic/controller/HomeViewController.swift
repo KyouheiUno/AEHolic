@@ -72,8 +72,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //セルをタップした際の処理(alertを表示)
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(indexPath.row)番目の行が選択されました。") //最後は消しましょう
-        let alert: UIAlertController = UIAlertController(title:"alert", message: "この箇所に行動内容を記載します。", preferredStyle: .alert)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! HomeTableViewCell
+        //タップしたセルの行番号のcontentを取得する
+        let alert = UIAlertController(title:"達成できましたか？", message: cell.homeContentLabel.text, preferredStyle: .alert)
         let success = UIAlertAction(title: "達成", style: .default, handler: { (action) -> Void in
                 // 達成ボタン押下時に実行した処理
                 // FireBaseへのデータの登録処理を記載すること
