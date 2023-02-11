@@ -70,11 +70,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    //セルをタップした際の処理(alertを表示)
+    //セルをタップした際の処理
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! HomeTableViewCell
-        //タップしたセルの行番号のcontentを取得する
-        let alert = UIAlertController(title:"達成できましたか？", message: cell.homeContentLabel.text, preferredStyle: .alert)
+        let messeage = cell.homeContentLabel.text!
+        configureAlert(messeage)
+    }
+    
+    //アラートの構成(セルタップ時に適応)
+    func configureAlert(_ massage: String) {
+        let alert = UIAlertController(title:"達成できましたか？", message: massage, preferredStyle: .alert)
         let success = UIAlertAction(title: "達成", style: .default, handler: { (action) -> Void in
                 // 達成ボタン押下時に実行した処理
                 // FireBaseへのデータの登録処理を記載すること
