@@ -22,6 +22,16 @@ class HomeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        UIcontainer()
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        // 独自に選択状態を表現したい場合に記載
+    }
+    
+    //カスタムセルのUIコンテナの処理
+    func UIcontainer() {
         homeUserIconImage.image = userDefaultIcon
         //この箇所を出し分ける
         homeBandStatusIconImage.image = successIcon
@@ -31,10 +41,5 @@ class HomeTableViewCell: UITableViewCell {
         homeActionCountLabel.text = "実行数" + "　" + "〇〇" + "回"
         homeHistoryRecordLabel.text = "累積記録　〇〇〇〇→〇〇〇〇 "
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
 }
+
