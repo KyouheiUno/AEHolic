@@ -88,7 +88,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="OCR-fr-dn2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="hDQ-p5-KqG"/>
                             <constraint firstItem="OCR-fr-dn2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="x0U-nb-dfO"/>
@@ -229,9 +229,6 @@
         <image name="homeIcon" width="25" height="25"/>
         <image name="indexIcon" width="25" height="25"/>
         <image name="userDefaultIcon" width="25" height="25"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

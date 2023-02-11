@@ -70,5 +70,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    //セルをタップした際の処理(alertを表示)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("\(indexPath.row)番目の行が選択されました。") //最後は消しましょう
+        let alert: UIAlertController = UIAlertController(title:"alert", message: "この箇所に行動内容を記載します。", preferredStyle: .alert)
+        let success = UIAlertAction(title: "達成", style: .default, handler: { (action) -> Void in
+                // 達成ボタン押下時に実行した処理
+                // FireBaseへのデータの登録処理を記載すること
+        })
+        let close = UIAlertAction(title: "戻る", style: .default, handler: nil)
+        let failure = UIAlertAction(title: "失敗", style: .destructive, handler: { (action) -> Void in
+                // 失敗ボタン押下時に実行した処理
+                // FireBaseへのデータの登録処理を記載すること
+        })
+        alert.addAction(success)
+        alert.addAction(close)
+        alert.addAction(failure)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
