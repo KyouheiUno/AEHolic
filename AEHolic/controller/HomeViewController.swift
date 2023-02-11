@@ -31,9 +31,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var date = Date()
     
     //日付
-    func dateFormat(_ hoge: String) -> DateFormatter {
+    func dateFormat(_ fotmat: String) -> DateFormatter {
         let dateFormat = DateFormatter()
-        dateFormat.dateFormat = hoge
+        dateFormat.dateFormat = fotmat
         dateFormat.timeZone = .current
         dateFormat.locale = Locale(identifier: "ja-JP")
         return dateFormat
@@ -95,4 +95,3 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.present(alert, animated: true, completion: nil)
     }
 }
-
