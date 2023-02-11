@@ -22,6 +22,8 @@
 		81AE03A42995AD620029C4D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03A32995AD620029C4D6 /* HomeViewController.swift */; };
 		81AE03A82995B9BA0029C4D6 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */; };
 		81AE03AC2995BDF10029C4D6 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AE03AB2995BDF10029C4D6 /* HistoryViewController.swift */; };
+		81F3B12229970AEC00218E9C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3B12029970AEC00218E9C /* HomeTableViewCell.swift */; };
+		81F3B12329970AEC00218E9C /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F3B12129970AEC00218E9C /* HomeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		81AE03A32995AD620029C4D6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		81AE03A72995B9BA0029C4D6 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		81AE03AB2995BDF10029C4D6 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		81F3B12029970AEC00218E9C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		81F3B12129970AEC00218E9C /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				812AFE322996E5EE0069DD10 /* IndexTableViewCell.xib */,
 				81AE03AB2995BDF10029C4D6 /* HistoryViewController.swift */,
 				81AE03A32995AD620029C4D6 /* HomeViewController.swift */,
+				81F3B12029970AEC00218E9C /* HomeTableViewCell.swift */,
+				81F3B12129970AEC00218E9C /* HomeTableViewCell.xib */,
 				81AE037C2995AD040029C4D6 /* Assets.xcassets */,
 				81AE037E2995AD040029C4D6 /* LaunchScreen.storyboard */,
 				81AE03812995AD040029C4D6 /* Info.plist */,
@@ -253,6 +259,7 @@
 				812AFE382996EE280069DD10 /* HistoryRecordTableViewCell.xib in Resources */,
 				81AE037D2995AD040029C4D6 /* Assets.xcassets in Resources */,
 				812AFE342996E5EE0069DD10 /* IndexTableViewCell.xib in Resources */,
+				81F3B12329970AEC00218E9C /* HomeTableViewCell.xib in Resources */,
 				81AE037B2995AD030029C4D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +291,7 @@
 				81AE03A42995AD620029C4D6 /* HomeViewController.swift in Sources */,
 				81AE03AC2995BDF10029C4D6 /* HistoryViewController.swift in Sources */,
 				812AFE372996EE280069DD10 /* HistoryRecordTableViewCell.swift in Sources */,
+				81F3B12229970AEC00218E9C /* HomeTableViewCell.swift in Sources */,
 				81AE03A82995B9BA0029C4D6 /* IndexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

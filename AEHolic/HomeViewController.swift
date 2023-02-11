@@ -6,8 +6,9 @@
 //
 import UIKit
 
-class HomeViewController: UIViewController  {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var dayOfWeekAndTimeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -17,6 +18,9 @@ class HomeViewController: UIViewController  {
         super.viewDidLoad()
         setupNavigationBarTitle()
         configureLabel()
+        homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
+        homeTableView.separatorInset = UIEdgeInsets.zero
+        homeTableView.separatorColor = .black
     }
     //ナビゲーションタイトルの設定
     private func setupNavigationBarTitle() {
@@ -56,5 +60,15 @@ class HomeViewController: UIViewController  {
         todayActionLabel.textAlignment = NSTextAlignment.center
         todayActionLabel.text = "〜 本日の行動 〜"
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! HomeTableViewCell
+        return cell
+    }
+    
 }
 

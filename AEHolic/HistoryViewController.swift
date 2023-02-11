@@ -16,6 +16,7 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         historyRecordTableView.register(UINib(nibName: "HistoryRecordTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         historyRecordTableView.dataSource = self
         historyRecordTableView.separatorInset = UIEdgeInsets.zero
+        historyRecordTableView.separatorColor = .black
     }
     //ナビゲーションタイトルの設定
     private func setupNavigationBarTitle() {
