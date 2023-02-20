@@ -8,6 +8,8 @@ import UIKit
 
 //ナビゲーション用のボタンを用意
 var addButtonItem: UIBarButtonItem!
+//現在の日付
+var date = Date()
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -25,22 +27,22 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         homeTableView.separatorInset = UIEdgeInsets.zero
         homeTableView.separatorColor = .black
         //ナビゲーションボタン初期設定
-        addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed(_:)))
+        addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(transitionToCreateBandView(_:)))
         self.navigationItem.rightBarButtonItem = addButtonItem
     }
-    
-    @objc func addButtonPressed(_ sender: UIBarButtonItem) {
-        //画面遷移をする記述を追加すること
-        print("追加ボタンが押されました")
-    }
-    
+
     //ナビゲーションタイトルの設定
     private func setupNavigationBarTitle() {
         title  = "AEHolic"
     }
     
-    //現在の日付
-    var date = Date()
+    //バンド新規作成画面遷移処理
+    @objc func transitionToCreateBandView(_ sender: UIBarButtonItem) {
+        print("追加ボタンが押されました")
+        let storyboard = UIStoryboard(name: "CreateBandView", bundle: nil)
+        guard let CreateBandViewController = storyboard.instantiateInitialViewController() as? CreateBandViewController else { return }
+        present(CreateBandViewController, animated: true)
+    }
     
     //日付
     func dateFormat(_ fotmat: String) -> DateFormatter {
