@@ -23,11 +23,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         setupNavigationBarTitle()
         configureLabel()
+        //テーブルビュー関連
         homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         homeTableView.separatorInset = UIEdgeInsets.zero
         homeTableView.separatorColor = .black
-        //ナビゲーションボタン初期設定
+        //ナビゲーションボタン関連
         addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(transitionToCreateBandView(_:)))
+        addButtonItem.tintColor = UIColor.black
         self.navigationItem.rightBarButtonItem = addButtonItem
     }
 
@@ -38,7 +40,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //バンド新規作成画面遷移処理
     @objc func transitionToCreateBandView(_ sender: UIBarButtonItem) {
-        print("追加ボタンが押されました")
         let storyboard = UIStoryboard(name: "CreateBandView", bundle: nil)
         guard let CreateBandViewController = storyboard.instantiateInitialViewController() as? CreateBandViewController else { return }
         present(CreateBandViewController, animated: true)

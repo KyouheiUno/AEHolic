@@ -8,6 +8,19 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hai-Ew-L5W">
+            <objects>
+                <navigationController id="ReS-H7-8bq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U6F-hG-4ae">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hth-j2-fhm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1422" y="-62"/>
+        </scene>
         <!--Create Band View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -16,24 +29,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CreateBandVireControler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKr-7Y-ahz">
-                                <rect key="frame" x="130" y="372" width="191" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="行動内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTL-nC-W5s">
+                                <rect key="frame" x="40" y="99" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R0D-il-ZUY">
+                                <rect key="frame" x="40" y="140" width="313" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="X1f-N8-KRP"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加算値" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2b-hA-G3W">
+                                <rect key="frame" x="40" y="288" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2U7-PQ-M4K">
+                                <rect key="frame" x="40" y="329" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R0D-il-ZUY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="3DE-fY-HgJ"/>
+                            <constraint firstItem="2U7-PQ-M4K" firstAttribute="top" secondItem="a2b-hA-G3W" secondAttribute="bottom" constant="20" id="6a4-pV-b2d"/>
+                            <constraint firstItem="R0D-il-ZUY" firstAttribute="leading" secondItem="WTL-nC-W5s" secondAttribute="leading" id="6lB-o8-VUH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2U7-PQ-M4K" secondAttribute="trailing" constant="40" id="76h-Tn-BKA"/>
+                            <constraint firstItem="WTL-nC-W5s" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="FgQ-yr-MA9"/>
+                            <constraint firstItem="a2b-hA-G3W" firstAttribute="top" secondItem="R0D-il-ZUY" secondAttribute="bottom" constant="20" id="LMh-YU-jMu"/>
+                            <constraint firstItem="WTL-nC-W5s" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="PPI-un-qKy"/>
+                            <constraint firstItem="R0D-il-ZUY" firstAttribute="top" secondItem="WTL-nC-W5s" secondAttribute="bottom" constant="20" id="Ug3-2h-UUT"/>
+                            <constraint firstItem="2U7-PQ-M4K" firstAttribute="leading" secondItem="WTL-nC-W5s" secondAttribute="leading" id="aw3-9N-09r"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="R0D-il-ZUY" secondAttribute="trailing" constant="40" id="tey-B5-AEK"/>
+                            <constraint firstItem="a2b-hA-G3W" firstAttribute="leading" secondItem="WTL-nC-W5s" secondAttribute="leading" id="zBK-Ck-IHL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gcI-AC-cIZ"/>
+                    <connections>
+                        <outlet property="bandContentView" destination="R0D-il-ZUY" id="026-dq-5mv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-49"/>
+            <point key="canvasLocation" x="-367.17557251908397" y="-63.380281690140848"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
