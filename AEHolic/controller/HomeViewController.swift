@@ -6,6 +6,9 @@
 //
 import UIKit
 
+//ナビゲーション用のボタンを用意
+var addButtonItem: UIBarButtonItem!
+
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var homeTableView: UITableView!
@@ -21,7 +24,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         homeTableView.separatorInset = UIEdgeInsets.zero
         homeTableView.separatorColor = .black
+        //ナビゲーションボタン初期設定
+        addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonPressed(_:)))
+        self.navigationItem.rightBarButtonItem = addButtonItem
     }
+    
+    @objc func addButtonPressed(_ sender: UIBarButtonItem) {
+        //画面遷移をする記述を追加すること
+        print("追加ボタンが押されました")
+    }
+    
     //ナビゲーションタイトルの設定
     private func setupNavigationBarTitle() {
         title  = "AEHolic"
