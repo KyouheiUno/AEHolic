@@ -26,6 +26,7 @@
 		81F3B12329970AEC00218E9C /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81F3B12129970AEC00218E9C /* HomeTableViewCell.xib */; };
 		81F3B12829A3F44700218E9C /* CreateBandView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F3B12729A3F44700218E9C /* CreateBandView.storyboard */; };
 		81F3B12A29A3F46400218E9C /* CreateBandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3B12929A3F46400218E9C /* CreateBandViewController.swift */; };
+		81F3B12E29A6A03300218E9C /* navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3B12D29A6A03200218E9C /* navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		81F3B12129970AEC00218E9C /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		81F3B12729A3F44700218E9C /* CreateBandView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateBandView.storyboard; sourceTree = "<group>"; };
 		81F3B12929A3F46400218E9C /* CreateBandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBandViewController.swift; sourceTree = "<group>"; };
+		81F3B12D29A6A03200218E9C /* navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				81AE03752995AD030029C4D6 /* SceneDelegate.swift */,
 				81AE037C2995AD040029C4D6 /* Assets.xcassets */,
 				81AE03812995AD040029C4D6 /* Info.plist */,
+				81F3B12D29A6A03200218E9C /* navigation.swift */,
 			);
 			path = AEHolic;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				81AE03AC2995BDF10029C4D6 /* HistoryViewController.swift in Sources */,
 				812AFE372996EE280069DD10 /* HistoryRecordTableViewCell.swift in Sources */,
 				81F3B12229970AEC00218E9C /* HomeTableViewCell.swift in Sources */,
+				81F3B12E29A6A03300218E9C /* navigation.swift in Sources */,
 				81AE03A82995B9BA0029C4D6 /* IndexViewController.swift in Sources */,
 				81F3B12A29A3F46400218E9C /* CreateBandViewController.swift in Sources */,
 			);

@@ -6,19 +6,14 @@
 //
 import UIKit
 
-class IndexViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class IndexViewController: UIViewController, UITableViewDelegate, UITableViewDataSource ,SetNavigation {
     
     @IBOutlet weak var indexTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBarTitle()
+        setNavigationBarLeftTitle("Eバンド一覧")
         indexTableView.register(UINib(nibName: "IndexTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
-    }
-    
-    //ナビゲーションタイトルの設定
-    private func setupNavigationBarTitle() {
-        title  = "Eバンド一覧"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

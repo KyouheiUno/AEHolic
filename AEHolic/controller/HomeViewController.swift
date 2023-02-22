@@ -11,7 +11,7 @@ var addButtonItem: UIBarButtonItem!
 //現在の日付
 var date = Date()
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController ,SetNavigation {
     
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var userImage: UIImageView!
@@ -22,7 +22,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureTabBar()
-        setNavigationBarLeftTitle("AEHolic")
         configureLabel()
         //テーブルビュー関連
         homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
@@ -32,21 +31,12 @@ class HomeViewController: UIViewController {
         addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(transitionToCreateBandView(_:)))
         addButtonItem.tintColor = UIColor.black
         self.navigationItem.rightBarButtonItem = addButtonItem
+        setNavigationBarLeftTitle("AEHolic")
     }
     
     //タブバーの色の設定
     func configureTabBar() {
         UITabBar.appearance().tintColor = UIColor.red
-    }
-    
-    //アプリタイトルの左よせ設定
-    func setNavigationBarLeftTitle(_ title: String) {
-        let titleLabel = UILabel(frame: CGRect(x: 4, y: 0, width: view.frame.width, height: 28))
-        titleLabel.text = title
-        titleLabel.textAlignment = .left
-        titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
-        titleLabel.textColor = .black
-        navigationItem.titleView = titleLabel
     }
     
     //バンド新規作成画面遷移処理

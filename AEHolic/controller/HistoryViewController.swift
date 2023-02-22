@@ -6,21 +6,17 @@
 //
 import UIKit
 
-class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource ,SetNavigation {
     
     @IBOutlet weak var historyRecordTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBarTitle()
+        setNavigationBarLeftTitle("累積記録")
         historyRecordTableView.register(UINib(nibName: "HistoryRecordTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
         historyRecordTableView.dataSource = self
         historyRecordTableView.separatorInset = UIEdgeInsets.zero
         historyRecordTableView.separatorColor = .black
-    }
-    //ナビゲーションタイトルの設定
-    private func setupNavigationBarTitle() {
-        title  = "累積記録"
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
