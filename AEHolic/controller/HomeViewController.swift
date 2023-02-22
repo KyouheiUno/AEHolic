@@ -21,6 +21,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTabBar()
         setNavigationBarLeftTitle("AEHolic")
         configureLabel()
         //テーブルビュー関連
@@ -31,6 +32,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(transitionToCreateBandView(_:)))
         addButtonItem.tintColor = UIColor.black
         self.navigationItem.rightBarButtonItem = addButtonItem
+    }
+    
+    //タブバーの色の設定
+    func configureTabBar() {
+        UITabBar.appearance().tintColor = UIColor.red
     }
     
     //アプリタイトルの左よせ設定
