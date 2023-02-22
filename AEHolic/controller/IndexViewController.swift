@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class IndexViewController: UIViewController, UITableViewDelegate, UITableViewDataSource ,SetNavigation {
+class IndexViewController: UIViewController ,SetNavigation {
     
     @IBOutlet weak var indexTableView: UITableView!
     
@@ -15,7 +15,9 @@ class IndexViewController: UIViewController, UITableViewDelegate, UITableViewDat
         setNavigationBarLeftTitle("Eバンド一覧")
         indexTableView.register(UINib(nibName: "IndexTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
     }
-    
+}
+
+extension IndexViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 30
     }

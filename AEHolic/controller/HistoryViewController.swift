@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource ,SetNavigation {
+class HistoryViewController: UIViewController ,SetNavigation {
     
     @IBOutlet weak var historyRecordTableView: UITableView!
     
@@ -18,7 +18,9 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
         historyRecordTableView.separatorInset = UIEdgeInsets.zero
         historyRecordTableView.separatorColor = .black
     }
-    
+}
+
+extension HistoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 30
     }
