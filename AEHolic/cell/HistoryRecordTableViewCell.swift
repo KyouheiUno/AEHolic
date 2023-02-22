@@ -17,7 +17,7 @@ class HistoryRecordTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        historyRecordContentLabel.text = "ランニング"
+        historyRecordContentLabel.text = "ランニングランニングランニングランニングランニングランニングランニングランニングランニングランニングランニングランニングランニングランニング"
         historyRecordStartDateLabel.text = "開始日" + "　" + "yyyy/mm/dd"
         historyRecordFinishDateLabel.text = "終了日" + "　" + "yyyy/mm/dd"
         historyRecordTotalValueLabel.text = "累積記録" + "　" + "〇〇回"

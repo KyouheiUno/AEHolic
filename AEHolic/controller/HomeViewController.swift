@@ -21,7 +21,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBarTitle()
+        setNavigationBarLeftTitle("AEHolic")
         configureLabel()
         //テーブルビュー関連
         homeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "customCell")
@@ -32,11 +32,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         addButtonItem.tintColor = UIColor.black
         self.navigationItem.rightBarButtonItem = addButtonItem
     }
-
-    //ナビゲーションタイトルの設定
-    private func setupNavigationBarTitle() {
-        title  = "AEHolic"
-    }
+    
+    //アプリタイトルの左よせ設定
+    func setNavigationBarLeftTitle(_ title: String) {
+            let titleLabel = UILabel(frame: CGRect(x: 4, y: 0, width: view.frame.width, height: 28))
+            titleLabel.text = title
+            titleLabel.textAlignment = .left
+            titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
+            titleLabel.textColor = .black
+            navigationItem.titleView = titleLabel
+        }
     
     //バンド新規作成画面遷移処理
     @objc func transitionToCreateBandView(_ sender: UIBarButtonItem) {
