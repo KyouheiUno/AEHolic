@@ -11,7 +11,7 @@ var addButtonItem: UIBarButtonItem!
 //現在の日付
 var date = Date()
 
-class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController {
     
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var userImage: UIImageView!
@@ -41,13 +41,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //アプリタイトルの左よせ設定
     func setNavigationBarLeftTitle(_ title: String) {
-            let titleLabel = UILabel(frame: CGRect(x: 4, y: 0, width: view.frame.width, height: 28))
-            titleLabel.text = title
-            titleLabel.textAlignment = .left
-            titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
-            titleLabel.textColor = .black
-            navigationItem.titleView = titleLabel
-        }
+        let titleLabel = UILabel(frame: CGRect(x: 4, y: 0, width: view.frame.width, height: 28))
+        titleLabel.text = title
+        titleLabel.textAlignment = .left
+        titleLabel.font = .systemFont(ofSize: 20, weight: .bold)
+        titleLabel.textColor = .black
+        navigationItem.titleView = titleLabel
+    }
     
     //バンド新規作成画面遷移処理
     @objc func transitionToCreateBandView(_ sender: UIBarButtonItem) {
@@ -87,22 +87,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         todayActionLabel.text = "〜 本日の行動 〜"
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! HomeTableViewCell
-        return cell
-    }
-    
-    //セルをタップした際の処理
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! HomeTableViewCell
-        let messeage = cell.homeContentLabel.text!
-        configureAlert(messeage)
-    }
-    
     //アラートの構成(セルタップ時に適応)
     func configureAlert(_ massage: String) {
         let alert = UIAlertController(title:"達成できましたか？", message: massage, preferredStyle: .alert)
@@ -119,5 +103,23 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         alert.addAction(close)
         alert.addAction(failure)
         self.present(alert, animated: true, completion: nil)
+    }
+}
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! HomeTableViewCell
+        return cell
+    }
+    
+    //セルをタップした際の処理
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as! HomeTableViewCell
+        let messeage = cell.homeContentLabel.text!
+        configureAlert(messeage)
     }
 }
